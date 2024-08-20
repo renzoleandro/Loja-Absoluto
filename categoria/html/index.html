@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Loja</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        
+        
+        
+    </style>
+
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1> MINHA LOJA 1.0 RASCUNHO </h1>
+    </header>
+    
+    <h4><p>Deixer aqui o sua opinião sobre esse site : <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQj9kSOpWqKRnyMSpmt2z9hZ7l1sCZs48Al-QWtQgmNIs5xg/viewform">CLIQUE AQUI PARA COMENTÁRIO</a>.</p></h4>
+
+    <main>
+        <div class="title">
+            <h2>PRODUTOS</h2>
+            <span>LISTA DE PRODUTOS DA MINHA LOJA.</span>
+        </div>
+        
+        <div class="card">
+            <div class="lineInput">
+                <label>- PRODUTO :</label>
+                <input type="text" id="produto" placeholder="NOME DO PRODUTO">
+            </div>
+
+            <div class="lineInput">
+                <label>- PREÇO : </label>
+                <input type="number" id="preco" placeholder="VALOR DO PRODUTO">
+            </div>
+
+            <button onclick="produto.salvar()" id="btn1">SALVAR</button>
+            <button onclick="produto.cancelar()">CANCELAR</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID :</th>
+                    <th>PRODUTO :</th>
+                    <th>VALOR :</th>
+                    <th class="center">AÇÕES :</th>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>
